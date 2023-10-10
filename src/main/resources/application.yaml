@@ -1,0 +1,25 @@
+
+server:
+  port: 0
+
+spring:
+
+  jpa:
+
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  application:
+    name: EMPLOYEE-SERVICE
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:xe
+
+
+    username: system
+    password: ANsaRI5%$
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+
+eureka:
+  client:
+    service-url:
+       defaultZone: http://localhost:8765/eureka/
